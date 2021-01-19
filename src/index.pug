@@ -1,27 +1,34 @@
 extends templates/layout
 
+
 block content
   header.header
-    section.header__left
-      a.logo(href="#")
-        img(src="https://heropcode.github.io/GitHub-Responsive/img/logo.svg", alt="")
-      ul
-        li
-          a(href="#") Personal
-        li
-          a(href="#") Open source
-        li
-          a(href="#") Business
-        li
-          a(href="#") Explore
-    section.header__right
-      ul
-        li
-          a(href="#") pricing
-        li
-          a(href="#") Blog
-        li
-          a(href="#") Support
-      input(type="text", name="search", placeholder="Search GitHub")
-      button Sign in
-      button Sign up
+    section.header__column
+      .logo
+        a(href="#") GitHub
+      ul.nav--main
+        a(href="#")
+          li.nav--main__item Personal
+        a(href="#")
+          li.nav--main__item Open source
+        a(href="#")
+          li.nav--main__item Business
+        a(href="#")
+          li.nav--main__item Explore
+    section.header__column
+      .btn-group
+        a(href="#")
+          button.btn.btn--normal Sign in
+        a(href="#")
+          button.btn.btn--green Sign up
+      form(action="", method="post")
+        input(type="text" placeholder="Search GitHub")  
+      ul.nav--sub
+        a(href="#")
+          li.nav--sub__item Pricing
+        a(href="#")
+          li.nav--sub__item Blog
+        a(href="#")
+          li.nav--sub__item Support
+  main.main
+  footer.main
