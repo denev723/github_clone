@@ -135,3 +135,53 @@ body {
     }
   }
 }
+
+.sign-wrapper {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  .sign-container {
+    max-width: 980px;
+    height: 652px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    .sign__left {
+      color: #fff;
+      margin-right: 100px;
+      p:nth-child(1) {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+      p:nth-child(2) {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.5;
+      }
+    }
+    .sign__right {
+      p {
+        font-size: 10px;
+      }
+      input {
+        @include input;
+        height: 40px;
+        &:not(:nth-child(3)) {
+          margin-bottom: 20px;
+        }
+      }
+      p {
+        margin-top: 10px;
+        text-align: center;
+        line-height: 1.5;
+        color: #333333;
+      }
+      button {
+        margin-top: 20px;
+        font-size: 20px;
+        height: 64px;
+      }
+    }
+  }
+}
