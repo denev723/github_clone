@@ -34,15 +34,20 @@ block content
     section.sign-wrapper
       .sign-container
         .summary
-          p.summary__title How people build software
-          p.summary__description Millions of developers use GitHub to build personal projects, support their businesses, and work together on open source technologies.
-        form(action="#" method="POST" id="jsFormf")
-          input(type="text" placeholder="Pick a username")
-          input(type="email" placeholder="Your email address")
-          input(type="password" placeholder="Create a password")
-          p Use at least one letter, one numeral, and seven characters.
-          button.btn.btn--green(type="submit") Sign up for GitHub
-          p By clicking "Sign up for GitHub", you agree to out terms of service and privacy policy. We'll occasionally send you account related emails.
+          p.summary__title How&nbsp;people build&nbsp;software
+          p.summary__description Millions of developers use GitHub to build personal projects, support their businesses, and&nbsp;work together on open source technologies.
+        form(action="#" method="POST" id="jsForm")
+          ul
+            li
+              input(type="text" placeholder="Pick a username")
+            li
+              input(type="email" placeholder="Your email address")
+            li
+              input(type="password" placeholder="Create a password")
+              p.caption Use at least one letter, one numeral, and seven characters.
+            li
+              button.btn.btn--green(type="submit") Sign up for GitHub
+              p By clicking "Sign up for GitHub", you agree to out terms of service and privacy policy. We'll occasionally send you account related emails.
     section.video-container
       p.video__title Welcome home, developers
       p.video__content GitHub fosters a fast, flexible, and collaborative development process that lets you work on your own or with others.
